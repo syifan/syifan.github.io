@@ -1,0 +1,119 @@
+@media screen{
+	.container{
+		width: 50%;
+		min-width: 600px;
+		margin: 0 auto;
+		font-weight: 200;
+	}
+}
+
+@media screen and (max-width:1920px){
+	.container{
+		width: 60%;
+		min-width: 600px;
+		margin: 0 auto;
+		font-weight: 200;
+	}
+}
+
+@media screen and (max-width:1440px){
+	.container{
+		width: 70%;
+		min-width: 600px;
+		margin: 0 auto;
+		font-weight: 200;
+	}
+}
+
+@media screen and (max-width:680px){
+	.container{
+		width: 100%;
+		min-width: 300px;
+		margin: 0 auto;
+		font-weight: 200;
+	}
+}
+
+h3{
+	font-weight: 400;
+	margin-top: 40px;
+	margin-bottom: 5px;
+}
+
+h4{
+	font-weight: 400;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+p{
+	margin: 0px;
+	font-size: 14px;
+}
+
+a:link{
+	text-decoration: none
+}
+
+.header{
+	height: 120px;
+	border-bottom: solid 1px #eeeeee;
+	padding: 0 10px;
+}
+
+.name-block{
+	display: inline-block;
+	height: 80px;
+	vertical-align: top;
+	margin: 30px 0px 10px 0px;
+}
+
+.name{
+	/*margin-top: 40px;*/
+	/*margin-top: 10px;*/
+	margin-bottom: 5px;
+	font-size: 24px;
+	line-height: 40px;
+}
+
+.email{
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.profile{
+	width: 80px;
+	height: 80px;
+	display: inline-block;
+	margin: 30px 0px 10px 0px;
+	border-radius: 3px;
+	background: url("yifan_profile.jpg");
+	background-size: contain;
+	float:right;
+	vertical-align: top;
+}
+
+.content{
+	padding: 0 10px;
+}
+
+.footer{
+	height: 30px;
+	bottom: 0px;
+	left: 0px;
+	border-top: solid 1px #eeeeee;
+	font-size: 12px;
+	color: #bbbbbb;
+	margin-top: 50px;
+	padding: 0 10px;
+}
+
+.footer-links{
+	list-style: none;
+	padding: 0px;
+}
+
+.footer-links li {
+	margin-left: 10px;
+	display: inline-block;
+}
