@@ -51,6 +51,12 @@ p{
 	font-size: 14px;
 }
 
+.publication-list li {
+	list-style-type:square;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
 a:link{
 	text-decoration: none
 }
