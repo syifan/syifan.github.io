@@ -1,27 +1,80 @@
 @media screen{
 	.container{
-		width: 50%;
-		min-width: 600px;
-		margin: 0 auto;
-		font-weight: 200;
-	}
-}
-
-@media screen and (max-width:1920px){
-	.container{
 		width: 60%;
 		min-width: 600px;
 		margin: 0 auto;
 		font-weight: 200;
 	}
+
+	.col-4 {
+		width:39%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	.col-5 {
+		width: 49%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	
+	.col-6 {
+		width: 59%;
+		display: inline-block;
+		vertical-align: top;
+	}
 }
 
-@media screen and (max-width:1440px){
+@media screen and (max-width:1920px){
 	.container{
 		width: 70%;
 		min-width: 600px;
 		margin: 0 auto;
 		font-weight: 200;
+	}
+
+	.col-4 {
+		width:38%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	.col-5 {
+		width: 48%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	
+	
+	.col-6 {
+		width: 58%;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+@media screen and (max-width:1440px){
+	.container{
+		width: 80%;
+		min-width: 600px;
+		margin: 0 auto;
+		font-weight: 200;
+	}
+
+	.col-4 {
+		width:80%;
+		display: block;
+	}
+	
+	.col-5 {
+		width: 80%;
+		display: block;
+	}
+	
+	.col-6 {
+		width: 80%;
+		display: block;
 	}
 }
 
@@ -31,6 +84,21 @@
 		min-width: 300px;
 		margin: 0 auto;
 		font-weight: 200;
+	}
+
+	.col-4 {
+		width: 100%;
+		display: block;
+	}
+	
+	.col-5 {
+		width: 100%;
+		display: block;
+	}
+	
+	.col-6 {
+		width: 100%;
+		display: block;
 	}
 }
 
@@ -101,6 +169,26 @@ a:link{
 
 .content{
 	padding: 0 10px;
+	text-align: justify;
+}
+
+.content:after {
+	content: "";
+	width: 100%;
+	display: inline-block;
+}
+
+
+
+.map {
+	width: 100%;
+	display: block;
+	margin: 10px auto;
+}
+
+.calendar {
+	width: 100%;
+	margin: 10px auto;
 }
 
 .footer{
@@ -122,4 +210,8 @@ a:link{
 .footer-links li {
 	margin-left: 10px;
 	display: inline-block;
+}
+
+.footer-links li a {
+	color: #999999;
 }
