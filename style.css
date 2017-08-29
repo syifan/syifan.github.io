@@ -215,3 +215,8 @@ a:link{
 .footer-links li a {
 	color: #999999;
 }
+
+.footer-icon {
+	width: 16px;
+	height: 16px;
+}
