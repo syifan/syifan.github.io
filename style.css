@@ -10,12 +10,14 @@
 		width:39%;
 		display: inline-block;
 		vertical-align: top;
+		margin: 0 auto;
 	}
 	
 	.col-5 {
 		width: 49%;
 		display: inline-block;
 		vertical-align: top;
+		margin: 0 auto;
 	}
 	
 	
@@ -23,6 +25,7 @@
 		width: 59%;
 		display: inline-block;
 		vertical-align: top;
+		margin: 0 auto;
 	}
 }
 
@@ -38,12 +41,14 @@
 		width:38%;
 		display: inline-block;
 		vertical-align: top;
+		margin: 0 auto;
 	}
 	
 	.col-5 {
 		width: 48%;
 		display: inline-block;
 		vertical-align: top;
+		margin: 0 auto;
 	}
 	
 	
@@ -51,10 +56,11 @@
 		width: 58%;
 		display: inline-block;
 		vertical-align: top;
+		margin: 0 auto;
 	}
 }
 
-@media screen and (max-width:1440px){
+@media screen and (max-width:1000px){
 	.container{
 		width: 80%;
 		min-width: 600px;
@@ -65,16 +71,19 @@
 	.col-4 {
 		width:80%;
 		display: block;
+		margin: 0 auto;
 	}
 	
 	.col-5 {
 		width: 80%;
 		display: block;
+		margin: 0 auto;
 	}
 	
 	.col-6 {
 		width: 80%;
 		display: block;
+		margin: 0 auto;
 	}
 }
 
@@ -89,16 +98,19 @@
 	.col-4 {
 		width: 100%;
 		display: block;
+		margin: 0 auto;
 	}
 	
 	.col-5 {
 		width: 100%;
 		display: block;
+		margin: 0 auto;
 	}
 	
 	.col-6 {
 		width: 100%;
 		display: block;
+		margin: 0 auto;
 	}
 }
 
@@ -116,7 +128,7 @@ h4{
 
 p{
 	margin: 0px;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .publication-list li {
