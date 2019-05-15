@@ -1,0 +1,22 @@
+{
+  "name": "syifan.github.io",
+  "version": "1.0.0",
+  "description": "Yifan Sun's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syifan/syifan.github.io.git"
+  },
+  "author": "Yifan Sun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syifan/syifan.github.io/issues"
+  },
+  "homepage": "https://github.com/syifan/syifan.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
