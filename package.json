@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/syifan/syifan.github.io#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1"
   }
