@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/syifan/syifan.github.io#readme",
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1"
   }
 }
