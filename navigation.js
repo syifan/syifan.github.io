@@ -2,6 +2,7 @@ $(document).ready(() => {
     const pages = [{
             path: "/publication.html",
             page: "/pages/publication.html",
+            navBtn: 'nav-publication',
         },
         {
             path: "/",
@@ -14,12 +15,18 @@ $(document).ready(() => {
     ]
 
     function route() {
-        for (let i = 0; i < pages.length; i++) {
-            if (window.location.pathname == pages[i].path) {
-                loadContent(pages[i].page)
-                return
-            }
+        let path = window.location.pathname
+        path = path.substr(1, path.length - 6)
+        if (path == "") {
+            path = "index"
         }
+        const htmlPath = path + '.html'
+        const pagePath = "/pages/" + htmlPath
+        const navBtn = '#nav-' + path
+
+        loadContent(pagePath)
+        $('.nav-item').removeClass('active')
+        $(navBtn).addClass('active')
     }
     route();
 
@@ -27,7 +34,7 @@ $(document).ready(() => {
         window.history.pushState(null, null, "publication.html");
         route()
     })
-    $('#nav-home').click(() => {
+    $('#nav-index').click(() => {
         window.history.pushState(null, null, "/");
         route();
     })
