@@ -1,10 +1,5 @@
 $(document).ready(() => {
     const pages = [{
-            path: "/publication.html",
-            page: "/pages/publication.html",
-            navBtn: 'nav-publication',
-        },
-        {
             path: "/",
             page: "/pages/home.html",
         },
@@ -12,6 +7,15 @@ $(document).ready(() => {
             path: "/index.html",
             page: "/pages/home.html",
         },
+        {
+            path: "/publication.html",
+            page: "/pages/publication.html",
+            navBtn: 'nav-publication',
+        },
+        {
+            path: "/mgpusim.html",
+            page: "/pages/mgpusim.html",
+        }
     ]
 
     function route() {
@@ -34,6 +38,7 @@ $(document).ready(() => {
         window.history.pushState(null, null, "publication.html");
         route()
     })
+
     $('#nav-index').click(() => {
         window.history.pushState(null, null, "/");
         route();
