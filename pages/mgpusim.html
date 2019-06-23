@@ -1,0 +1,81 @@
+<h2 class="mt-3">MGPUSim</h2>
+
+<div class="mt-3 row justify-content-center">
+    <div class="col-8">
+        <img src="assets/akita.svg" />
+    </div>
+</div>
+
+<h3 class="mt-3">Overview</h3>
+<p>
+    MGPUSim is a highly-flexible high-performance cycle-level GPU architecture.
+    MGPUSim models the AMD GCN3 ISA. MGPUSim supports running simulation in
+    parallel with multiple CPU cores. One main feature of MGPUSim is the
+    capablity of simulating multi-GPU systems. MGPUSim uses the Akita simulator
+    framework, which is a highly flexible, high-performance parallel simulator
+    framework.
+</p>
+
+
+<h3 class="mt-3">Lighting Talk</h3>
+
+<div class="mt-2">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6Sihpqqovvw" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<h3 class="mt-3">Publications</h3>
+
+<div class="mt-2">
+    <div>ISCA 2019</div>
+    <div>
+        <b>
+            <a href="javascript:jumpTo('/mgpusim.html')">MGPUSim</a>: Enabling
+            Multi-GPU Performance Modeling and Optimization
+        </b>
+    </div>
+    <div>
+        <b>Yifan Sun</b>, Trinayan Baruah, Saiful A. Mujumder, Shi Dong, Xiang
+        Gong, Shane Treadway, Yuhui Bao, Spencer Hance, Carter McCardwell,
+        Vincent Zhao, Harrison Barclay, Amir Kavyan Ziabari, Zhongliang Chen,
+        Rafael Ubal, José L. Abellán, John Kim, Ajay Joshi, David Kaeli
+    </div>
+    <div>
+        <a href="http://bit.ly/2Jft4jV">PDF</a> |
+        <a href="https://youtu.be/6Sihpqqovvw">
+            <i class="fab fa-youtube"></i>
+        </a> |
+        <a href="publications/isca2019.bib">BIBTEX</a>
+    </div>
+</div>
+
+<h3 class="mt-3">Studies that use MGPUSim</h3>
+<div class="mt-2">
+    <div>IPDPS 2019</div>
+    <div>
+        <b>
+            Exploiting Adaptive Data Compression to Improve Performance and
+            Energy-efficiency of Compute Workloads in Multi-GPU Systems
+        </b>
+    </div>
+    <div>
+        Mohammad Khavari Tavana, <b>Yifan Sun</b>, Nicolas Bohm Agostini,
+        David Kaeli
+    </div>
+    <div>
+        <a href="http://bit.ly/mgpucompression">PDF</a> |
+        <a href="publications/ipdps19.bib">BIBTEX</a>
+    </div>
+</div>
+
+<h3 class="mt-3">About naming</h3>
+<p>
+    You may have seen many related names. Let me explain the names. First, the
+    name Akita represents a simulator framework we developed. Akita is not a
+    simulator, but a library that makes simulator development easy. Second,
+    MGPUSim is a GPU simulator that is developed with the Akita framework. It
+    models the AMD GCN3 ISA and features multi-GPU system simulation. We use to
+    call it MGSim, but as there is a naming conflict, we deprecated the name
+    MGSim.
+</p>
