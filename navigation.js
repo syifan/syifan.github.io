@@ -19,6 +19,10 @@ const pages = [{
     path: "/teaching.html",
     page: "/pages/teaching.html",
 },
+{
+    path: "/software.html",
+    page: "/pages/software.html",
+},
 ]
 
 $(document).ready(() => {
@@ -34,6 +38,10 @@ $(document).ready(() => {
 
     $('#nav-teaching').click(() => {
         jumpTo("teaching.html")
+    })
+
+    $('#nav-software').click(() => {
+        jumpTo("software.html")
     })
 })
 
