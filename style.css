@@ -1,12 +1,31 @@
+
+a {
+	color: #555555;
+}
+
 .pub-year{
 	margin-bottom: 24pt;
 }
 
-.pub-block{
-	margin-bottom: 12pt;
+.pub-year h2{
+	font-size: 3.2em;
+	font-weight: 100;
 }
 
+.pub-block{
+	margin-bottom: 16pt;
+	border-left: 2px #f8f8f8 solid;
+	padding-left: 16px;
+}
+
+
 .conference-name {
-	font-weight: 200;
-	font-size: 1.4em;
+	font-weight: 300;
+	font-size: 1.0em;
+}
+
+.software-name {
+	font-weight: 300;
+	font-size: 1.6em;
+	margin-bottom: 4px;
 }
