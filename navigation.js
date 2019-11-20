@@ -1,31 +1,39 @@
 const pages = [{
-        path: "/",
-        page: "/pages/home.html",
-    },
-    {
-        path: "/index.html",
-        page: "/pages/home.html",
-    },
-    {
-        path: "/publication.html",
-        page: "/pages/publication.html",
-        navBtn: 'nav-publication',
-    },
-    {
-        path: "/mgpusim.html",
-        page: "/pages/mgpusim.html",
-    }
+    path: "/",
+    page: "/pages/home.html",
+},
+{
+    path: "/index.html",
+    page: "/pages/home.html",
+},
+{
+    path: "/publication.html",
+    page: "/pages/publication.html",
+    navBtn: 'nav-publication',
+},
+{
+    path: "/mgpusim.html",
+    page: "/pages/mgpusim.html",
+},
+{
+    path: "/teaching.html",
+    page: "/pages/teaching.html",
+},
 ]
 
 $(document).ready(() => {
     route();
 
+    $('#nav-index').click(() => {
+        jumpTo("/")
+    })
+
     $('#nav-publication').click(() => {
         jumpTo("publication.html")
     })
 
-    $('#nav-index').click(() => {
-        jumpTo("/")
+    $('#nav-teaching').click(() => {
+        jumpTo("teaching.html")
     })
 })
 
