@@ -16,6 +16,11 @@ const pages = [{
     page: "/pages/mgpusim.html",
 },
 {
+    path: "/blog.html",
+    page: "/pages/blog.html",
+    navBtn: 'nav-blog'
+},
+{
     path: "/teaching.html",
     page: "/pages/teaching.html",
 },
@@ -42,6 +47,10 @@ $(document).ready(() => {
 
     $('#nav-software').click(() => {
         jumpTo("software.html")
+    })
+
+    $('#nav-blog').click(() => {
+        jumpTo("blog.html")
     })
 })
 
