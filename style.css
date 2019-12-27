@@ -34,10 +34,11 @@ a {
 	/* display: block; */
 	/* height: 80px; */
 	overflow: hidden;
-	border: 1px solid #f8f8f8;
+	border: 1px solid #eeeeee;
 	border-radius: 4px;
 	vertical-align: middle;
-	padding: 15px;
+	padding: 10px 5px 10px 5px;
+	margin-top: 20px;
 }
 
 .blog-post>.thumbnail {
@@ -49,13 +50,20 @@ a {
 	margin: auto;
 }
 
+@media screen and (max-width: 768px){
+	.blog-post>.thumbnail {
+		margin-top: 10px;
+		margin-bottom: 25px;
+	}
+}
+
 .blog-post>.preview {
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	/* margin-top: 10px; */
+	/* margin-bottom: 10px; */
 }
 
 
@@ -66,8 +74,8 @@ a {
 }
 
 .blog-post h4 {
-	line-height: 20px;
-	margin-bottom: 0;
+	/* line-height: 20px; */
+	/* margin-bottom: 0; */
 }
 
 .blog-post > .preview >  p {
