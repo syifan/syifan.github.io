@@ -1,0 +1,162 @@
+<html>
+<header>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
+    <script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-105676805-1', 'auto');
+
+        // Replace the following lines with the plugins you want to use.
+        ga('require', 'eventTracker');
+        ga('require', 'outboundLinkTracker');
+        ga('require', 'urlChangeTracker');
+        // ...
+
+        ga('send', 'pageview');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    <title>Tutorial on the Akita Simulator Framework and MGPUSim</title>
+</header>
+
+<body>
+    <div class="container">
+
+        <!-- <nav id="navbar-example2" class="navbar">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#introduction">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#objective">Objective</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#schedule">Schedule</a>
+                </li>
+            </ul> -->
+        <!-- </nav> -->
+
+        <h1 class="mt-3">
+            Tutorial on the Akita Simulator Framework and MGPUSim
+        </h1>
+
+
+        <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+
+
+            <h2 id="introduction" class="mt-3">Introduction</h2>
+            <p>
+                Akita is a computer architecture framework that enables fast
+                prototyping of chip designs. MGPUSim is an AMD GCN3 GPU
+                simulator based-on the Akita framework. They are both developed
+                with the Go programming language and are both open-sourced
+                under the MIT license.
+            </p>
+
+            <h2 id="objective">Objective</h2>
+            <p>
+                The goals of this tutorial include introducing the recently
+                published computer architecture simulator framework, Akita,
+                and introducing the multi-GPU simulator that is implemented
+                with Akita, MGPUSim. We will engage the audience to let them
+                work with the simulator. We will first give a brief tutorial of
+                the Go programming language. The rest of the tutorial will be
+                divided into 2 parts. First, we will analyze the general
+                requirements of computer architecture simulators, followed by
+                an introduction to Akita and the discussion of how simulators
+                developed using Akita can easily satisfy the simulator
+                requirements. We emphasize how programmers can write very
+                simple simulator code, while the simulation engine can run the
+                simulation on parallel hardware. Second, as a particular use
+                case of Akita, we introduce MGPUSim, a multi-GPU simulator that
+                simulates AMD-GCN3-based GPUs. We will introduce how MGPUSim
+                models GPU architecture. We will highlight novel features in
+                MPGPUSim, including the thread-dispatching process and the
+                cache pipelines. By the end of the tutorial, participants will
+                be able to use Akita and MGPUSim to support their research.
+                The takeaways for participants will include:
+
+                <ul>
+                    <li>
+                        How to write programs in the Go programming language.
+                    </li>
+                    <li>
+                        How to use MGPUSim to model customized multi-GPU
+                        systems. How to use the Akita simulator framework to
+                        implement highly-flexible, high-performance and
+                        parallel discrete-event simulators.
+                    </li>
+                    <li>
+                        How to use MGPUSim to simulate GPU execution. And how
+                        to configure MGPUSim to your need.
+                    </li>
+                </ul>
+
+            </p>
+
+            <h2 id="schedule">Schedule (Tentative)</h2>
+            <dl class="row ml-4 mr-4">
+                <dt class="col-sm-3">8:30 - 8:45</dt>
+                <dd class="col-sm-9">
+                    Introduction to Akita and MGPUSim.
+                </dd>
+
+                <dt class="col-sm-3">8:45 - 9:30</dt>
+                <dd class="col-sm-9">
+                    A brief introduction of the Go programming language.
+                </dd>
+
+                <dt class="col-sm-3">9:30 - 10:00</dt>
+                <dd class="col-sm-9">
+                    The Akita simulator framework design philosophy.
+                </dd>
+
+                <dt class="col-sm-3">10:30 - 11:00</dt>
+                <dd class="col-sm-9">
+                    The Akita simulator framework design and hands-on demo.
+                </dd>
+
+                <dt class="col-sm-3">11:00 - 11:20</dt>
+                <dd class="col-sm-9">
+                    MGPUSim: GPU modeling.
+                </dd>
+
+                <dt class="col-sm-3">11:20 - 11:50</dt>
+                <dd class="col-sm-9">
+                    Hands-on demo: preparing experiments for your research.
+                </dd>
+
+                <dt class="col-sm-3">11:50 - 12:00</dt>
+                <dd class="col-sm-9">
+                    Conclusions and future work.
+                </dd>
+            </dl>
+        </div>
+
+        <h2>Recommended Reading before the Tutorial</h2>
+        <ul>
+            <li>
+                <a href="https://tour.golang.org/welcome/1">
+                    A Tour of Go
+                </a>
+            </li>
+            <li>
+                <a href="https://syifan.github.io/blog.html#akita-tutorial">
+                    Akita Tutorial Series
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
