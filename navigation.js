@@ -1,57 +1,62 @@
 const pages = [{
-    path: "/",
-    page: "/pages/home.html",
-},
-{
-    path: "/index.html",
-    page: "/pages/home.html",
-},
-{
-    path: "/publication.html",
-    page: "/pages/publication.html",
-    navBtn: 'nav-publication',
-},
-{
-    path: "/mgpusim.html",
-    page: "/pages/mgpusim.html",
-},
-{
-    path: "/blog.html",
-    page: "/pages/blog.html",
-    navBtn: 'nav-blog'
-},
-{
-    path: "/teaching.html",
-    page: "/pages/teaching.html",
-},
-{
-    path: "/software.html",
-    page: "/pages/software.html",
-},
+        path: "/",
+        page: "/pages/home.html",
+    },
+    {
+        path: "/index.html",
+        page: "/pages/home.html",
+    },
+    {
+        path: "/publication.html",
+        page: "/pages/publication.html",
+        navBtn: 'nav-publication',
+    },
+    {
+        path: "/mgpusim.html",
+        page: "/pages/mgpusim.html",
+    },
+    {
+        path: "/blog.html",
+        page: "/pages/blog.html",
+        navBtn: 'nav-blog'
+    },
+    {
+        path: "/teaching.html",
+        page: "/pages/teaching.html",
+    },
+    {
+        path: "/software.html",
+        page: "/pages/software.html",
+    },
 ]
 
-$(document).ready(() => {
+document.addEventListener("DOMContentLoaded", () => {
     route();
 
-    $('#nav-index').click(() => {
-        jumpTo("/")
-    })
+    document.getElementById('nav-index')
+        .addEventListener("click", () => {
+            jumpTo("/")
+        })
 
-    $('#nav-publication').click(() => {
-        jumpTo("publication.html")
-    })
+    document.getElementById('nav-publication')
+        .addEventListener("click", () => {
+            jumpTo("publication.html")
+        })
 
-    $('#nav-teaching').click(() => {
-        jumpTo("teaching.html")
-    })
+    document.getElementById('nav-teaching')
+        .addEventListener("click", () => {
+            jumpTo("teaching.html")
+        })
 
-    $('#nav-software').click(() => {
-        jumpTo("software.html")
-    })
+    document.getElementById('nav-software')
+        .addEventListener("click", () => {
+            jumpTo("software.html")
+        })
 
-    $('#nav-blog').click(() => {
-        jumpTo("blog.html")
-    })
+    document.getElementById('nav-blog')
+        .addEventListener("click", () => {
+            jumpTo("blog.html")
+        })
 })
 
 function jumpTo(pos) {
@@ -67,18 +72,28 @@ function route() {
     }
     const htmlPath = path + '.html'
     const pagePath = "/pages/" + htmlPath
-    const navBtn = '#nav-' + path
+    const navBtn = 'nav-link-' + path
 
     loadContent(pagePath)
-    $('.nav-item').removeClass('active')
-    $(navBtn).addClass('active')
+
+
+    document.querySelectorAll('.nav-link').forEach(item => {
+        item.classList.remove('active')
+    })
+    document.getElementById(navBtn).classList.add('active')
 }
 
 function loadContent(page) {
     fetch(page)
         .then(rsp => rsp.text())
         .then(rsp => {
-            $('#right-content').html(rsp)
+            document.getElementById('right-content').innerHTML = rsp
+        })
+
+    fetch('/pages/news.html')
+        .then(rsp => rsp.text())
+        .then(rsp => {
+            document.getElementById('news-content').innerHTML = rsp
         })
 }
 

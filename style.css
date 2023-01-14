@@ -93,3 +93,11 @@ a {
 	margin-bottom: 0;
 	margin-top: 4px;
 }
+
+#news-list>li {
+	margin-bottom: 10px;
+}
+
+#news-list>li>.date {
+	font-size: 0.8em;
+}
