@@ -2,6 +2,12 @@
 <html>
   <head>
     <script>
+      if (document.referrer != "") {
+        window.location.replace(
+          "https://sarchlab.org/syifan?ref=" + document.referrer
+        );
+      }
+
       window.location.replace("https://sarchlab.org/syifan");
     </script>
   </head>
